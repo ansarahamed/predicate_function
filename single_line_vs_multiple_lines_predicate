@@ -1,0 +1,23 @@
+Correct! In a single-line arrow function, an explicit return statement is not required if you’re simply returning an expression. When using the arrow function syntax without curly braces {}, JavaScript implicitly returns the result of the expression on the right of the arrow.
+
+Examples of Single-Line Arrow Functions Without return
+Single-Line Predicate to Check Even Numbers:
+
+let isEven = (number) => number % 2 === 0;
+Here, number % 2 === 0 is evaluated, and the result (true or false) is implicitly returned.
+No return keyword is needed because the function is a single-line expression.
+Single-Line Predicate with Curly Braces (Requires return): If you add curly braces {}, then you must use return explicitly.
+
+let isEven = (number) => { return number % 2 === 0; };
+In general:
+
+Without curly braces ({}): Return is implicit.
+With curly braces ({}): Return must be explicit.
+This implicit return is a feature of arrow functions that can make them more concise, especially for simple predicates and single-expression functions.
+
+In javascript you have two options
+If you use { curly braces you hv to hv return function, otherwise no
+
+
+
+
